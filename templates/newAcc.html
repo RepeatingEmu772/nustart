@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 <head>
-	<title>NUSTART</title>
+	<title>	Profile</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Photo Gallery HTML Template">
 	<meta name="keywords" content="endGam,gGaming, magazine, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
@@ -21,11 +22,7 @@
 	
 	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
 
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='prof-css.css')}}">
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -57,10 +54,10 @@
 				<img src="img/menu-icon.png" alt="" class="menu-icon">
 				<ul class="main-menu">
 					<li class="active"><a href="./">Home</a></li>
-					<li><a href="./team">Our Team</a></li>
-					<li><a href="./get-hired.html">Get Hired</a></li>
+					<li><a href="./gallery-single.html">Our Team</a></li>
+					<li><a href="./contact.html">Get Hired</a></li>
 					<li><a href="./contact.html">Hire</a></li>
-					<li><a href="./contact-us.html">Contact Us</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
 					<li><a href="./profile">Login</a></li>
 				</ul>
 				<!--<div class="social-links-warp">
@@ -77,26 +74,42 @@
 			<div class="copyright">Manan Mrig  @ All rights reserved</div>
 		</header>
 		<!-- header section end -->
-
-		<!-- Page section -->
-		<div class="page-section home-page">
+<div class="page-section home-page">
 			
 				<div class="slider-item d-flex align-items-center set-bg" data-setbg="" data-hash="slide-1">
 					<div class="si-text-box">
-						<span></span>
-						<h2>NUSTART</h2>
-						<p>Thinking of putting something about us.--> tell me what should i write</p>
+
+
+
+						<h2>Create An Account</h2>
+						<form class="contact-form">
+						<label>Name</label>
+						<input type="text" name="username" placeholder="Enter Here">
+						<br>
+
+						<label>School</label>
+						<input type="text" name="schoolName" placeholder="Enter Here">
+						<br>
+
+						<label>Password</label>
+						<input type="password" name="password" placeholder="Enter Here">
+						<br>
+
+						<label>Upload Resume</label>
+						<input type="file" name="Resume">
+
+						<button type='submit' class="site-btn">Submit</button>
+						</form>
 					</div>
 			
 		
 		<!-- Page section end-->
 	</div>
+ 	
 
-	
 
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="static/jquery-3.2.1.min.js"></script>
+    <script src="static/jquery-3.2.1.min.js"></script>
 	<script src="static/bootstrap.min.js"></script>
 	<script src="static/owl.carousel.min.js"></script>
 	<script src="static/jquery.nicescroll.min.js"></script>
@@ -105,5 +118,5 @@
 	<script src="static/circle-progress.min.js"></script>
 	<script src="static/main.js"></script>
 
-	</body>
+</body>
 </html>
